@@ -12,6 +12,14 @@
 		"Colors: Edgar Delgado",
 		"Letters: Chris Eliopoulos"
 	};
+	var tags = new string[]
+{
+		"Comedy",
+		"Horror",
+		"Foreign",
+		"Sci-Fi",
+		"Fiction"
+};
 
 }
 
@@ -35,11 +43,23 @@
 			<h5>Artists:</h5>
 			<div>
 				<ul>
+
 					@foreach (var artist in artists)
 					{
 						<li>@artist</li>
 					}
 				</ul>
+			</div>
+
+			<h5>Tags:</h5>
+			<div>
+			
+
+					@foreach (var tag in tags)
+					{
+						<text>@tag</text>
+					}
+			
 			</div>
 		}
 
