@@ -29,10 +29,20 @@
 					</ul>
 				</div>
 			}
+
+
+			<h5>Tags:</h5>
+			<div>
+				@foreach (var tag in Model.Tags)
+				{
+					<text>@tag.Category</text>
+				}
+			</div>
 		</div>
 
 		<h5>Description:</h5>
 		<div>@Html.Raw(Model.DescriptionHtml)</div>
+
 
 	</div>
 	<div class="col-md-6">
@@ -61,12 +71,6 @@
 
 
 
-	<h5>Tags:</h5>
-	<div>
-		@foreach (var tag in Model.Tags)
-		{
-			<text>@tag.Category</text>
-		}
-	</div>
+
 }
 
